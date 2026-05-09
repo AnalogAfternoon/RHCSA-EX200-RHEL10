@@ -1,7 +1,5 @@
 # Lesson 21 Lab — Solutions
 
----
-
 1. Display current kernel version.
 ```bash
 uname -r
