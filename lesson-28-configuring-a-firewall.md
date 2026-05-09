@@ -1,14 +1,8 @@
 # Lesson 28 — Configuring a Firewall
 
-> 📺 *Video coming soon!*
-
----
-
 ## Overview
 
 RHEL uses `firewalld` as its firewall management tool. It uses zones and services to control what network traffic is allowed. This lesson covers how to analyze network connections and configure firewall rules.
-
----
 
 ## Subtopics
 
@@ -18,8 +12,6 @@ RHEL uses `firewalld` as its firewall management tool. It uses zones and service
 - 28.4 Allowing Service Access
 - 28.5 Allowing Port Access
 - 28.6 Exploring Advanced Firewalld Use
-
----
 
 ## Analyzing Network Connections — ss
 
@@ -38,8 +30,6 @@ ss -tulnp
 # t=TCP, u=UDP, l=listening, n=numeric, p=process
 ```
 
----
-
 ## firewalld — Firewall Management
 
 | Command | Description |
@@ -51,7 +41,6 @@ ss -tulnp
 | `firewall-cmd --get-zones` | List all available zones |
 | `firewall-cmd --get-default-zone` | Show the default zone |
 
----
 
 ## Firewalld Zones
 
@@ -64,8 +53,6 @@ Zones define trust levels for network connections. The most common zones:
 | `drop` | All incoming traffic is silently dropped |
 | `internal` | For internal networks — more trusted than public |
 | `dmz` | For DMZ servers — limited access |
-
----
 
 ## Allowing Services
 
@@ -87,8 +74,6 @@ firewall-cmd --permanent --remove-service=http
 firewall-cmd --reload
 ```
 
----
-
 ## Allowing Ports
 
 ```bash
@@ -104,8 +89,6 @@ firewall-cmd --reload
 firewall-cmd --permanent --remove-port=8080/tcp
 firewall-cmd --reload
 ```
-
----
 
 ## Advanced Firewalld Use
 
@@ -134,15 +117,12 @@ firewall-cmd --list-ports
 # Shows only allowed ports
 ```
 
----
-
 ## Important Rules
 
 > ⚠️ Always use `--permanent` for rules you want to keep after reboot, then follow with `--reload` to apply them immediately.
 
 > ⚠️ Without `--permanent`, rules are active until the next `firewall-cmd --reload` or system reboot.
 
----
 
 ## Key Takeaway
 
