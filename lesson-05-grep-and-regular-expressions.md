@@ -1,14 +1,8 @@
 # Lesson 5 — grep and Regular Expressions
 
-> 📺 *Video coming soon!*
-
----
-
 ## Overview
 
 `grep` is one of the most used commands in Linux. It searches through text — files, command output, logs — and returns only the lines that match what you are looking for. Combined with regular expressions, it becomes an incredibly powerful filter.
-
----
 
 ## Basic grep
 
@@ -19,8 +13,6 @@
 | `grep -v "word" file` | Invert match — show lines that do NOT contain the word |
 | `grep -c "word" file` | Count the number of matching lines |
 | `grep -r "word" /dir` | Recursively search all files in a directory |
-
----
 
 ## Regular Expressions
 
@@ -34,7 +26,6 @@ Regular expressions (regex) let you search for patterns, not just exact words.
 | `grep "[a-z]" file` | Lines containing any lowercase letter |
 | `grep -E "a\|b" file` | Lines matching "a" or "b" — extended regex |
 
----
 
 ## Examples
 
@@ -63,8 +54,6 @@ grep -r "sshd" /etc/
 cat /etc/passwd | grep "bash"
 # Pipes passwd output into grep — same result, different style
 ```
-
----
 
 ## Key Takeaway
 
