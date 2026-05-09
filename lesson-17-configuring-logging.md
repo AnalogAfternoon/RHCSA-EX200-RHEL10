@@ -1,14 +1,9 @@
 # Lesson 17 — Configuring Logging
 
-> 📺 *Video coming soon!*
-
----
-
 ## Overview
 
 Logging is how Linux records what is happening on the system. RHEL uses two main logging systems — `systemd-journald` for in-memory/persistent journal logs, and `rsyslogd` for traditional text-based log files. Knowing how to read and manage logs is essential for troubleshooting.
 
----
 
 ## Subtopics
 
@@ -17,8 +12,6 @@ Logging is how Linux records what is happening on the system. RHEL uses two main
 - 17.3 Preserving the Systemd Journal
 - 17.4 Understanding rsyslogd
 - 17.5 Using logrotate
-
----
 
 ## systemd-journald
 
@@ -47,7 +40,6 @@ Logging is how Linux records what is happening on the system. RHEL uses two main
 | 6 | info — informational |
 | 7 | debug — debug-level messages |
 
----
 
 ## Preserving the Journal
 
@@ -62,8 +54,6 @@ Or edit `/etc/systemd/journald.conf` and set:
 ```ini
 Storage=persistent
 ```
-
----
 
 ## rsyslogd — Traditional Logging
 
@@ -82,7 +72,6 @@ Storage=persistent
 | `systemctl restart rsyslog` | Restart after config changes |
 | `logger "test message"` | Manually send a message to the log |
 
----
 
 ## logrotate — Managing Log Size
 
@@ -97,8 +86,6 @@ Storage=persistent
 logrotate -f /etc/logrotate.conf
 # Force log rotation immediately
 ```
-
----
 
 ## Examples
 
@@ -115,8 +102,6 @@ journalctl --since "30 min ago"
 logger "Manual test log entry"
 # Adds a line to /var/log/messages
 ```
-
----
 
 ## Key Takeaway
 
