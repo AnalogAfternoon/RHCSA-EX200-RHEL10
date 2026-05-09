@@ -2,8 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
-
 1. Search `/etc/passwd` for all lines containing the word "root".
 
 2. Search `/etc/passwd` for all lines that do NOT contain "nologin".
