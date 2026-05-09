@@ -89,8 +89,6 @@ tar -xvf backup.tar.gz
 # Extracts the archive in the current directory
 ```
 
----
-
 ## Key Takeaway
 
 For the RHCSA, focus on `tar` with `-cvf` and `-xvf` as your core archive commands. Remember the compression flags: `z` for gzip, `j` for bzip2, `J` for xz. And always be careful with `rm -r`.
