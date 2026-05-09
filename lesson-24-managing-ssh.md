@@ -1,14 +1,9 @@
 # Lesson 24 — Managing SSH
 
-> 📺 *Video coming soon!*
-
----
-
 ## Overview
 
 SSH is the standard tool for secure remote access to Linux systems. This lesson goes deeper than basic connectivity — covering key-based authentication, SSH configuration options, and secure file transfer tools.
 
----
 
 ## Subtopics
 
@@ -19,7 +14,7 @@ SSH is the standard tool for secure remote access to Linux systems. This lesson 
 - 24.5 Copying Files Securely
 - 24.6 Synchronizing Files Securely
 
----
+
 
 ## SSH Key-based Login
 
@@ -41,8 +36,6 @@ ssh-copy-id user@YOUR_SERVER_IP
 ssh user@YOUR_SERVER_IP
 ```
 
----
-
 ## Caching SSH Keys — ssh-agent
 
 If your private key has a passphrase, you can cache it so you don't have to type it every time.
@@ -59,7 +52,6 @@ ssh-add ~/.ssh/id_rsa
 ssh-add -l
 ```
 
----
 
 ## SSH Server Configuration
 
@@ -80,8 +72,6 @@ systemctl restart sshd
 # Test config for errors before restarting
 sshd -t
 ```
-
----
 
 ## Copying Files Securely — scp and sftp
 
@@ -112,8 +102,6 @@ put file    # Upload a file
 exit        # Close the session
 ```
 
----
-
 ## Synchronizing Files Securely — rsync
 
 `rsync` is more efficient than `scp` for syncing — it only transfers changed files.
@@ -130,8 +118,6 @@ rsync -avz user@YOUR_SERVER_IP:/home/user/mydir/ mydir/
 # -v = verbose
 # -z = compress during transfer
 ```
-
----
 
 ## Key Takeaway
 
