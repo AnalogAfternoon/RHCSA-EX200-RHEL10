@@ -2,13 +2,10 @@
 
 > 📺 *Video coming soon!*
 
----
 
 ## Overview
 
 SELinux (Security-Enhanced Linux) is a mandatory access control system built into RHEL. It provides an additional security layer beyond standard file permissions by labeling every file, process, and port with a context. Understanding SELinux is essential for the RHCSA exam.
-
----
 
 ## Subtopics
 
@@ -23,7 +20,6 @@ SELinux (Security-Enhanced Linux) is a mandatory access control system built int
 - 27.9 Using Booleans
 - 27.10 Troubleshooting SELinux
 
----
 
 ## SELinux Modes
 
@@ -52,8 +48,6 @@ SELINUX=enforcing
 ```
 Then reboot.
 
----
-
 ## SELinux Labels (Contexts)
 
 Every file and process has an SELinux context with four parts:
@@ -73,8 +67,6 @@ ps -eZ | grep httpd
 # Shows SELinux context of running processes
 ```
 
----
-
 ## Managing File Contexts
 
 | Command | Description |
@@ -91,8 +83,6 @@ ps -eZ | grep httpd
 semanage fcontext -a -t httpd_sys_content_t "/mywebsite(/.*)?"
 restorecon -Rv /mywebsite/
 ```
-
----
 
 ## Managing Port Contexts
 
@@ -111,8 +101,6 @@ semanage port -a -t http_port_t -p tcp 8080
 semanage port -d -t http_port_t -p tcp 8080
 # Remove the port rule
 ```
-
----
 
 ## SELinux Booleans
 
@@ -141,8 +129,6 @@ setsebool -P boolean_name on
 | `ftp_home_dir` | Allow FTP access to home directories |
 | `samba_enable_home_dirs` | Allow Samba to share home directories |
 
----
-
 ## Troubleshooting SELinux
 
 ```bash
@@ -160,8 +146,6 @@ tail -f /var/log/audit/audit.log | grep denied
 ```
 
 > 💡 **Tip:** When something is blocked and you suspect SELinux, run `setenforce 0` temporarily. If it works, SELinux was the cause — fix the context or boolean, then `setenforce 1`.
-
----
 
 ## Key Takeaway
 
