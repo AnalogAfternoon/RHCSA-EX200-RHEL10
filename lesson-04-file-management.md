@@ -1,14 +1,8 @@
 # Lesson 4 — File Management
 
-
-
----
-
 ## Overview
 
 Managing files and directories is something you will do constantly as a Linux administrator. This lesson also covers archiving and compression — essential skills for backups and transferring files.
-
----
 
 ## Directories
 
@@ -17,8 +11,6 @@ Managing files and directories is something you will do constantly as a Linux ad
 | `mkdir dirname` | Create a new directory |
 | `mkdir -p path/to/dir` | Create nested directories all at once |
 
----
-
 ## Copying & Moving
 
 | Command | Description |
@@ -26,8 +18,6 @@ Managing files and directories is something you will do constantly as a Linux ad
 | `cp file destination` | Copy a file |
 | `cp -r dir destination` | Copy a directory and all its contents |
 | `mv file destination` | Move or rename a file or directory |
-
----
 
 ## Deleting
 
@@ -38,16 +28,12 @@ Managing files and directories is something you will do constantly as a Linux ad
 
 > ⚠️ **Warning:** There is no trash bin on the command line. Deleted files are gone permanently. Always double-check before running `rm -r`.
 
----
-
 ## Links
 
 | Command | Description |
 |--------|-------------|
 | `ln -s [target] [linkname]` | Create a soft (symbolic) link — like a shortcut |
 | `ln [target] [linkname]` | Create a hard link — a direct reference to the same file data |
-
----
 
 ## Archives & Compression
 
@@ -80,8 +66,6 @@ Managing files and directories is something you will do constantly as a Linux ad
 | `bzip2 -d file` | Decompress a bzip2 file |
 | `xz file` | Compress a file with xz |
 | `xz -d file` | Decompress an xz file |
-
----
 
 ## Examples
 
