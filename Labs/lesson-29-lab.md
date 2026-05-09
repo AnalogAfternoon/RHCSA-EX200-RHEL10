@@ -2,8 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
-
 1. Install the `nfs-utils` package.
 
 2. Enable and start the `nfs-server` service.
