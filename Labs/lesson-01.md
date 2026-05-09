@@ -2,8 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
-
 1. Print your current working directory to the screen.
 
 2. List all files in the `/etc` directory using the detailed format.
