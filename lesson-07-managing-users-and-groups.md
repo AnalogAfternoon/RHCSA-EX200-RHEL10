@@ -41,7 +41,6 @@ User and group management is a core responsibility of any Linux system administr
 | `sudo groupadd groupname` | Create a new group |
 | `sudo groupdel groupname` | Delete a group |
 
----
 
 ## Key System Files
 
