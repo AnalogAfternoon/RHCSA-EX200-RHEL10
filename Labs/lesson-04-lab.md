@@ -2,8 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
-
 1. Create a directory called `rhcsa-practice` in your home directory.
 
 2. Inside `rhcsa-practice`, create three subdirectories: `scripts`, `logs`, and `backups`.
