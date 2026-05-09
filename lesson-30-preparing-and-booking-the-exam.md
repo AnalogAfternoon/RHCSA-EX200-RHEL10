@@ -1,14 +1,8 @@
 # Lesson 30 — Preparing and Booking the Exam
 
-> 📺 *Video coming soon!*
-
----
-
 ## Overview
 
 The final lesson covers what to expect on exam day, how to book your RHCSA exam, and strategies for success. The RHCSA is a hands-on performance-based exam — there are no multiple choice questions.
-
----
 
 ## About the RHCSA Exam
 
@@ -21,8 +15,6 @@ The final lesson covers what to expect on exam day, how to book your RHCSA exam,
 | Environment | Live RHEL system — tasks must work when graded |
 | Delivery | Remote proctored or in-person at a testing center |
 
----
-
 ## How to Book the Exam
 
 1. Go to [redhat.com](https://www.redhat.com/en/services/certification)
@@ -33,8 +25,6 @@ The final lesson covers what to expect on exam day, how to book your RHCSA exam,
 6. Complete payment
 
 > 💡 Red Hat occasionally offers discounted exam vouchers through bundles or promotions — check before purchasing at full price.
-
----
 
 ## Key Topics to Review Before the Exam
 
@@ -51,8 +41,6 @@ The final lesson covers what to expect on exam day, how to book your RHCSA exam,
 | SELinux | Lesson 27 |
 | Scheduling and automation | Lessons 16, 23 |
 
----
-
 ## Exam Day Tips
 
 - **Practice in a lab environment** — set up a RHEL or Rocky Linux VM and work through tasks without notes
@@ -61,8 +49,6 @@ The final lesson covers what to expect on exam day, how to book your RHCSA exam,
 - **Verify your work** — after completing a task, test it (restart services, check status, reboot and verify persistence)
 - **Manage your time** — 3 hours goes fast; don't spend too much time on one task
 - **Persistence matters** — if a service or setting must survive a reboot, make sure it does (`systemctl enable`, fstab entries, `setsebool -P`, etc.)
-
----
 
 ## Practice Lab Checklist
 
@@ -80,8 +66,6 @@ Before exam day, make sure you can do all of the following without notes:
 - [ ] Open firewall ports and services with `firewall-cmd`
 - [ ] Schedule tasks with `cron` and `at`
 - [ ] Reset a forgotten root password using `rd.break`
-
----
 
 ## Key Takeaway
 
