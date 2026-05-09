@@ -1,7 +1,5 @@
 # Lesson 5 Lab — Solutions
 
----
-
 1. Search for "root" in `/etc/passwd`.
 ```bash
 grep "root" /etc/passwd
