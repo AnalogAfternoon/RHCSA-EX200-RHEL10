@@ -2,7 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
 
 1. Create a directory called `/project` and a group called `devs`. Set `/project` to be owned by the `devs` group.
 
