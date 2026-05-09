@@ -1,7 +1,5 @@
 # Lesson 23 Lab — Solutions
 
----
-
 1. `hello.sh`
 ```bash
 #!/bin/bash
