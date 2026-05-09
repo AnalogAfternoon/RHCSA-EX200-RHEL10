@@ -2,8 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
-
 1. Display all IP addresses assigned to your system.
 
 2. Show the current routing table.
