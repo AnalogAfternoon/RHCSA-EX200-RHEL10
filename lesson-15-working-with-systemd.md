@@ -1,14 +1,8 @@
 # Lesson 15 — Working with Systemd
 
-> 📺 *Video coming soon!*
-
----
-
 ## Overview
 
 Systemd is the init system and service manager used in RHEL. It controls how services start, stop, and depend on each other. Understanding systemd is essential for any Linux administrator.
-
----
 
 ## Subtopics
 
@@ -20,8 +14,6 @@ Systemd is the init system and service manager used in RHEL. It controls how ser
 - 15.6 Masking Services
 - 15.7 Using Systemd to Run Anything
 
----
-
 ## Systemd Unit Types
 
 | Unit Type | Extension | Purpose |
@@ -31,8 +23,6 @@ Systemd is the init system and service manager used in RHEL. It controls how ser
 | Timer | `.timer` | Schedules tasks (like cron) |
 | Mount | `.mount` | Manages filesystem mount points |
 | Target | `.target` | Groups units — similar to runlevels |
-
----
 
 ## Managing Services
 
@@ -81,8 +71,6 @@ Masking is stronger than disabling — it prevents a service from being started 
 | `systemctl edit service` | Edit a unit file override (creates drop-in file) |
 | `systemctl daemon-reload` | Reload systemd after making changes to unit files |
 
----
-
 ## Examples
 
 ```bash
@@ -107,8 +95,6 @@ systemctl mask bluetooth
 systemctl daemon-reload
 # Required after editing any unit file
 ```
-
----
 
 ## Key Takeaway
 
