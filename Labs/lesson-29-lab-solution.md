@@ -1,7 +1,5 @@
 # Lesson 29 Lab — Solutions
 
----
-
 1. Install `nfs-utils`.
 ```bash
 sudo dnf install nfs-utils -y
