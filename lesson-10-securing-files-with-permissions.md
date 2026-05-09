@@ -1,14 +1,8 @@
 # Lesson 10 — Securing Files with Permissions
 
-> 📺 *Video coming soon!*
-
----
-
 ## Overview
 
 Linux file permissions control exactly who can read, write, and execute files and directories. This lesson goes deeper than basic permissions — covering ownership, default permissions, special bits, and shared group directories.
-
----
 
 ## Subtopics
 
@@ -18,8 +12,6 @@ Linux file permissions control exactly who can read, write, and execute files an
 - 10.4 Managing Basic Permissions
 - 10.5 Applying Default Permissions
 - 10.6 Configuring Directories for Shared Group Access
-
----
 
 ## Understanding File Ownership
 
@@ -36,8 +28,6 @@ ls -l file.txt
 #  +------------- file type
 ```
 
----
-
 ## Changing Ownership
 
 | Command | Description |
@@ -52,8 +42,6 @@ chown jason:developers project/
 chown -R jason:developers /var/www/mysite/
 ```
 
----
-
 ## Basic Permissions
 
 | Permission | File | Directory |
@@ -61,8 +49,6 @@ chown -R jason:developers /var/www/mysite/
 | r (4) | Read file contents | List directory contents |
 | w (2) | Modify file | Create/delete files in directory |
 | x (1) | Execute file | Enter (cd into) directory |
-
----
 
 ## Managing Permissions — chmod
 
@@ -113,8 +99,6 @@ umask 027
 # Make permanent — add to ~/.bashrc or /etc/profile
 echo "umask 027" >> ~/.bashrc
 ```
-
----
 
 ## Special Permission Bits
 
