@@ -1,14 +1,8 @@
 # Lesson 26 — Configuring Time Service
 
-> 📺 *Video coming soon!*
-
----
-
 ## Overview
 
 Accurate time is critical for logging, authentication, certificates, and scheduled tasks. This lesson covers how to manage time on RHEL using `timedatectl`, the `date` command, and NTP (Network Time Protocol) for synchronization.
-
----
 
 ## Subtopics
 
@@ -17,8 +11,6 @@ Accurate time is critical for logging, authentication, certificates, and schedul
 - 26.3 Using date
 - 26.4 Managing an NTP Client
 - 26.5 Managing an NTP Server
-
----
 
 ## timedatectl — System Time Management
 
@@ -48,8 +40,6 @@ timedatectl list-timezones | grep America
 # Lists all American timezones
 ```
 
----
-
 ## date — Display and Set Time
 
 ```bash
@@ -62,8 +52,6 @@ date "+%Y-%m-%d %H:%M:%S"
 date -s "2024-01-15 10:30:00"
 # Set date/time manually (not recommended when NTP is active)
 ```
-
----
 
 ## NTP — Network Time Protocol
 
@@ -107,8 +95,6 @@ systemctl restart chronyd
 firewall-cmd --permanent --add-service=ntp
 firewall-cmd --reload
 ```
-
----
 
 ## Key Takeaway
 
