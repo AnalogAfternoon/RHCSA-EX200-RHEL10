@@ -1,7 +1,5 @@
 # Lesson 3 Lab — Solutions
 
----
-
 1. Save `ls /etc` output to `etclist.txt`.
 ```bash
 ls /etc > etclist.txt
