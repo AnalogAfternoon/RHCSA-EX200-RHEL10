@@ -1,7 +1,5 @@
 # Lesson 1 Lab — Solutions
 
----
-
 1. Print your current working directory.
 ```bash
 pwd
