@@ -2,8 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
-
 1. Create a new user called `student1`.
 
 2. Set a password for `student1`.
