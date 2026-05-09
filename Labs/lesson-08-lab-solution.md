@@ -1,7 +1,5 @@
 # Lesson 8 Lab — Solutions
 
----
-
 1. Create `secure.txt`.
 ```bash
 touch ~/secure.txt
