@@ -1,7 +1,5 @@
 # Lesson 26 Lab — Solutions
 
----
-
 1. Display current time and NTP status.
 ```bash
 timedatectl
