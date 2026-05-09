@@ -2,8 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
-
 1. Check whether `firewalld` is running.
 
 2. Display all current firewall rules including services, ports, and zone.
