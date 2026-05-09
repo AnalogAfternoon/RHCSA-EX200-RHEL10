@@ -1,7 +1,5 @@
 # Lesson 15 Lab — Solutions
 
----
-
 1. Check `sshd` status.
 ```bash
 systemctl status sshd
