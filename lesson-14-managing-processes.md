@@ -1,14 +1,8 @@
 # Lesson 14 — Managing Processes
 
-> 📺 *Video coming soon!*
-
----
-
 ## Overview
 
 Monitoring processes is one thing — actively managing them is another. This lesson covers how to send signals to control processes, adjust their priority, apply performance profiles, and manage user sessions.
-
----
 
 ## Subtopics
 
@@ -16,8 +10,6 @@ Monitoring processes is one thing — actively managing them is another. This le
 - 14.2 Managing Process Priority
 - 14.3 Using tuned Profiles
 - 14.4 Managing User Sessions and Processes
-
----
 
 ## Signals — Controlling Processes
 
@@ -51,8 +43,6 @@ Linux assigns each process a priority from **-20 (highest)** to **19 (lowest)**.
 
 > ⚠️ Only root can set negative (higher priority) nice values.
 
----
-
 ## tuned — Performance Profiles
 
 `tuned` is a system daemon that automatically optimizes performance based on a selected profile.
@@ -84,8 +74,6 @@ Linux assigns each process a priority from **-20 (highest)** to **19 (lowest)**.
 | `w` | Show who is logged in and what they are doing |
 | `who` | List currently logged-in users |
 
----
-
 ## Examples
 
 ```bash
@@ -110,8 +98,6 @@ tuned-adm profile throughput-performance
 loginctl list-sessions
 # Shows all active login sessions
 ```
-
----
 
 ## Key Takeaway
 
