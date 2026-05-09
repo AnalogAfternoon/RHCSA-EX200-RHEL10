@@ -2,8 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
-
 1. Write a script called `hello.sh` that prints "Hello, RHCSA!" to the screen. Make it executable and run it.
 
 2. Write a script called `args.sh` that prints the first and second arguments passed to it.
