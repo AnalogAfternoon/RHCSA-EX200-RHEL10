@@ -2,7 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
 
 1. Display the current default systemd target.
 
