@@ -1,7 +1,5 @@
 # Lesson 14 Lab — Solutions
 
----
-
 1. Run `sleep 500` in background.
 ```bash
 sleep 500 &
