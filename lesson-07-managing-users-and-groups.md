@@ -1,14 +1,8 @@
 # Lesson 7 — Managing Users and Groups
 
-> 📺 *Video coming soon!*
-
----
-
 ## Overview
 
 User and group management is a core responsibility of any Linux system administrator. This lesson covers creating, modifying, and deleting users and groups, as well as managing passwords and account security.
-
----
 
 ## Creating & Deleting Users
 
@@ -18,8 +12,6 @@ User and group management is a core responsibility of any Linux system administr
 | `sudo useradd -G group username` | Create a user and add them to a group |
 | `sudo userdel username` | Delete a user |
 | `sudo userdel -r username` | Delete a user and their home directory |
-
----
 
 ## Modifying Users
 
@@ -34,8 +26,6 @@ User and group management is a core responsibility of any Linux system administr
 
 > ⚠️ **Important:** Always use `-aG` (append to group) instead of just `-G` when adding a user to a group. Using `-G` alone will remove the user from all other groups.
 
----
-
 ## Passwords & Aging
 
 | Command | Description |
@@ -43,8 +33,6 @@ User and group management is a core responsibility of any Linux system administr
 | `sudo passwd username` | Set or change a user's password |
 | `sudo chage -M days username` | Set the maximum number of days before password must change |
 | `sudo chage -l username` | List all password aging information for a user |
-
----
 
 ## Groups
 
@@ -62,8 +50,6 @@ User and group management is a core responsibility of any Linux system administr
 | `/etc/passwd` | Stores user account information (username, UID, home dir, shell) |
 | `/etc/shadow` | Stores encrypted passwords and aging info |
 | `/etc/group` | Stores group names and their members |
-
----
 
 ## Examples
 
@@ -89,8 +75,6 @@ sudo chage -l jason
 sudo userdel -r jason
 # Deletes jason and removes their home directory
 ```
-
----
 
 ## Key Takeaway
 
