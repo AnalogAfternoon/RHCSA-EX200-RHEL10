@@ -1,9 +1,5 @@
 # Lesson 2 — Using Essential Tools
 
-> 📺 *Video coming soon!*
-
----
-
 ## Overview
 
 These are the core tools you will reach for daily — creating files, reading them, editing them, and looking up help. Getting comfortable with Vim and `man` pages early will pay off throughout the entire course.
