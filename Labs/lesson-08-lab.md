@@ -2,8 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
-
 1. Create a file called `secure.txt` in your home directory.
 
 2. Set the permissions on `secure.txt` so only the owner can read and write it (numeric method).
