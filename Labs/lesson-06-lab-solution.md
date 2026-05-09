@@ -1,7 +1,5 @@
 # Lesson 6 Lab — Solutions
 
----
-
 1. Run `dnf update` as root without switching users.
 ```bash
 sudo dnf update
