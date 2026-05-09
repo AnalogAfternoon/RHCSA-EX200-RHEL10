@@ -2,8 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
-
 1. Create an empty file called `testfile.txt` in your home directory.
 
 2. Write the text "Hello RHCSA" into a file called `notes.txt`, creating it in the process.
