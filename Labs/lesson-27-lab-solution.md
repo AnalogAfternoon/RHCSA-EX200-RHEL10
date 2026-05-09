@@ -1,7 +1,5 @@
 # Lesson 27 Lab — Solutions
 
----
-
 1. Display current SELinux mode.
 ```bash
 getenforce
