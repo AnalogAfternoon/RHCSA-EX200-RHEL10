@@ -1,7 +1,5 @@
 # Lesson 10 Lab — Solutions
 
----
-
 1. Create directory and group, set group ownership.
 ```bash
 sudo mkdir /project
