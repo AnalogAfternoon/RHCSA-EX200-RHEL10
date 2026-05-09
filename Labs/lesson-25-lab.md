@@ -2,7 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
 
 1. Install the Apache web server package.
 
