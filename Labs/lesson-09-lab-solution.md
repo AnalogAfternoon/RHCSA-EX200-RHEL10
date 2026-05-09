@@ -1,7 +1,5 @@
 # Lesson 9 Lab — Solutions
 
----
-
 1. Create `admin1` with home directory and bash shell.
 ```bash
 sudo useradd -m -s /bin/bash admin1
