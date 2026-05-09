@@ -2,8 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
-
 1. List all block devices on the system in a tree view.
 
 2. List all block devices including their filesystem type and UUID.
