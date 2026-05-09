@@ -35,7 +35,6 @@ jason:x:1001:1001:Jason Smith:/home/jason:/bin/bash
 | home_dir | Home directory path |
 | shell | Default login shell |
 
----
 
 ## Creating and Managing Users
 
@@ -68,8 +67,6 @@ cat /etc/login.defs
 # Shows password aging, UID/GID ranges, and other policies
 ```
 
----
-
 ## Limiting User Access
 
 | Command | Description |
@@ -80,7 +77,6 @@ cat /etc/login.defs
 | `chage -l username` | List password aging information |
 | `chage -E YYYY-MM-DD username` | Set account expiration date |
 
----
 
 ## Managing Groups
 
