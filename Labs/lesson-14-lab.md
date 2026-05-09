@@ -2,8 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
-
 1. Run `sleep 500 &` in the background and note its PID.
 
 2. Send a graceful termination signal to that process using its PID.
