@@ -2,8 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
-
 1. Search for a package called `vim` using dnf.
 
 2. Install the `vim` package.
