@@ -1,14 +1,8 @@
 # Lesson 11 — Managing Network Configuration
 
-> 📺 *Video coming soon!*
-
----
-
 ## Overview
 
 Network configuration is essential for any Linux administrator. This lesson covers IPv4 and IPv6 networking concepts, how to configure interfaces using NetworkManager tools, and how to troubleshoot connectivity issues.
-
----
 
 ## Subtopics
 
@@ -22,8 +16,6 @@ Network configuration is essential for any Linux administrator. This lesson cove
 - 11.8 Managing Network Configuration with nmtui
 - 11.9 Troubleshooting Networking
 
----
-
 ## IPv4 Networking Basics
 
 | Concept | Description |
@@ -32,8 +24,6 @@ Network configuration is essential for any Linux administrator. This lesson cove
 | Subnet Mask | Defines the network portion (e.g. 255.255.255.0 = /24) |
 | Default Gateway | Router IP — where traffic goes when leaving the local network |
 | DNS Server | Resolves hostnames to IP addresses |
-
----
 
 ## NIC Naming
 
@@ -51,8 +41,6 @@ ip link show
 # Lists all network interfaces and their names
 ```
 
----
-
 ## Viewing Network Configuration
 
 | Command | Description |
@@ -64,7 +52,6 @@ ip link show
 | `ss -tulnp` | Show listening ports |
 | `cat /etc/resolv.conf` | Show DNS servers |
 
----
 
 ## Hostname Management
 
@@ -91,8 +78,6 @@ hostnamectl set-hostname rhel-server.example.com
 echo "192.168.1.20  webserver.local" >> /etc/hosts
 ```
 
----
-
 ## NetworkManager
 
 NetworkManager is the service that manages network connections on RHEL. It stores connection profiles and handles interface configuration automatically.
@@ -104,8 +89,6 @@ systemctl status NetworkManager
 nmcli general status
 # Show overall NetworkManager status
 ```
-
----
 
 ## nmcli — Command Line Network Manager
 
@@ -152,7 +135,6 @@ nmcli connection add \
   ipv4.method auto
 ```
 
----
 
 ## nmtui — Text User Interface
 
@@ -162,8 +144,6 @@ A simple menu-driven interface for NetworkManager — easier than nmcli for basi
 nmtui
 # Opens an interactive menu to edit connections, set hostname, etc.
 ```
-
----
 
 ## Troubleshooting Networking
 
@@ -193,7 +173,6 @@ journalctl -u NetworkManager -f
 # Watch NetworkManager logs live
 ```
 
----
 
 ## Key Takeaway
 
