@@ -1,7 +1,5 @@
 # Lesson 16 Lab — Solutions
 
----
-
 1. Open crontab for editing.
 ```bash
 crontab -e
