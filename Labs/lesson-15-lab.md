@@ -2,8 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
-
 1. Check the status of the `sshd` service.
 
 2. Stop the `sshd` service.
