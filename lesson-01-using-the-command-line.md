@@ -14,8 +14,6 @@ Before you can do anything meaningful in Linux, you need to know how to navigate
 | `cd` | Change directory — move to a different location |
 | `whoami` | Display which user you are currently logged in as |
 
----
-
 ## Examples
 
 ```bash
@@ -38,7 +36,6 @@ whoami
 # Output: jason
 ```
 
----
 
 ## Key Takeaway
 
