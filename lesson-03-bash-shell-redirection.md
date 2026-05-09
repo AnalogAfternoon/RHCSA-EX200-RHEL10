@@ -45,7 +45,6 @@ command > output.txt 2>&1
 # Sends both normal output and errors into the same file
 ```
 
----
 
 ## Key Takeaway
 
