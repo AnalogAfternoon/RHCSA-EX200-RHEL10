@@ -1,14 +1,8 @@
 # Lesson 20 — Managing the Boot Procedure
 
-> 📺 *Video coming soon!*
-
----
-
 ## Overview
 
 Understanding how Linux boots is critical for troubleshooting and system recovery. This lesson covers the RHEL boot process, how to modify GRUB2 boot parameters, and how to use systemd targets to control what the system boots into.
-
----
 
 ## Subtopics
 
@@ -19,15 +13,12 @@ Understanding how Linux boots is critical for troubleshooting and system recover
 - 20.5 Setting the Default Systemd Target
 - 20.6 Booting into a Specific Target
 
----
 
 ## The Boot Process (Overview)
 
 ```
 BIOS/UEFI → GRUB2 Bootloader → Linux Kernel → initramfs → systemd → Default Target
 ```
-
----
 
 ## GRUB2 — Bootloader
 
@@ -56,8 +47,6 @@ grub2-mkconfig -o /boot/grub2/grub.cfg
 grub2-mkconfig -o /boot/efi/EFI/redhat/grub.cfg
 ```
 
----
-
 ## Systemd Targets
 
 Targets are groups of units that define what the system should be running. They replace the old SysV runlevels.
@@ -81,8 +70,6 @@ Targets are groups of units that define what the system should be running. They 
 | `systemctl set-default target` | Set the default boot target |
 | `systemctl isolate target` | Switch to a different target immediately |
 | `systemctl list-units --type=target` | List all active targets |
-
----
 
 ## Examples
 
@@ -114,7 +101,6 @@ systemd.unit=emergency.target
 
 Then press **Ctrl+X** to boot.
 
----
 
 ## Key Takeaway
 
