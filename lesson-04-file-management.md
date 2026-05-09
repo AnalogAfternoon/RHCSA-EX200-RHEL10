@@ -1,6 +1,6 @@
 # Lesson 4 — File Management
 
-> 📺 *Video coming soon!*
+
 
 ---
 
