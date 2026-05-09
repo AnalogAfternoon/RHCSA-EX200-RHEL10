@@ -1,14 +1,8 @@
 # Lesson 8 — File Permissions
 
-> 📺 *Video coming soon!*
-
----
-
 ## Overview
 
 File permissions control who can read, write, and execute files in Linux. Every file has an owner, a group, and a set of permissions for three categories of users: the owner, the group, and everyone else (other).
-
----
 
 ## Viewing Permissions
 
@@ -22,8 +16,6 @@ ls -l
 #  |||+++------- Owner permissions (rwx)
 #  ||+---------- File type (- = file, d = directory)
 ```
-
----
 
 ## chmod — Change Permissions
 
@@ -52,8 +44,6 @@ ls -l
 | `chmod 700 file` | rwx------ — owner only, full access |
 | `chmod 600 file` | rw------- — owner read/write only |
 
----
-
 ## Permission Values
 
 | Number | Permission | Symbol |
@@ -69,8 +59,6 @@ ls -l
 
 > 💡 **How to calculate:** Add the values together. Read(4) + Write(2) = 6. Read(4) + Execute(1) = 5. Read(4) + Write(2) + Execute(1) = 7.
 
----
-
 ## chown & chgrp — Change Ownership
 
 | Command | Description |
@@ -79,8 +67,6 @@ ls -l
 | `chgrp group file` | Change the group of a file |
 | `chown user:group file` | Change both owner and group at once |
 | `chown -R user:group dir` | Recursively change ownership of a directory |
-
----
 
 ## Examples
 
@@ -104,8 +90,6 @@ chown root:root /etc/myconfig
 chown -R jason:developers /home/jason/projects/
 # Recursively changes ownership of all files in the directory
 ```
-
----
 
 ## Key Takeaway
 
