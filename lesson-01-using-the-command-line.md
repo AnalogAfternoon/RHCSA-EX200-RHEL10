@@ -1,8 +1,5 @@
 # Lesson 1 — Using the Command Line
 
-
----
-
 ## Overview
 
 Before you can do anything meaningful in Linux, you need to know how to navigate the command line. These five commands are the foundation of everything — you will use them in every single session.
