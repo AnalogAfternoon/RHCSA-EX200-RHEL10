@@ -1,14 +1,8 @@
 # Lesson 18 — Working with Partitions and Mounts
 
-> 📺 *Video coming soon!*
-
----
-
 ## Overview
 
 Storage management is a major RHCSA topic. This lesson covers how disk layout works in Linux, how to create and manage partitions, and how to mount filesystems both temporarily and permanently.
-
----
 
 ## Subtopics
 
@@ -22,8 +16,6 @@ Storage management is a major RHCSA topic. This lesson covers how disk layout wo
 - 18.8 Defining Systemd Mounts
 - 18.9 Creating a Swap Partition
 
----
-
 ## Listing Block Devices
 
 | Command | Description |
@@ -33,16 +25,12 @@ Storage management is a major RHCSA topic. This lesson covers how disk layout wo
 | `fdisk -l` | List all disks and their partitions |
 | `blkid` | Show UUIDs and labels for all block devices |
 
----
-
 ## Partition Table Types
 
 | Type | Description |
 |------|-------------|
 | MBR (msdos) | Older format — max 4 primary partitions, max 2TB disk |
 | GPT | Modern format — up to 128 partitions, supports large disks |
-
----
 
 ## Creating Partitions
 
@@ -70,8 +58,6 @@ gdisk /dev/sdb
 # Opens GPT partition tool — same key layout as fdisk
 ```
 
----
-
 ## Creating Filesystems
 
 | Command | Description |
@@ -80,7 +66,6 @@ gdisk /dev/sdb
 | `mkfs.ext4 /dev/sdb1` | Create an ext4 filesystem |
 | `mkswap /dev/sdb2` | Prepare a swap partition |
 
----
 
 ## Mounting Filesystems
 
@@ -91,7 +76,6 @@ gdisk /dev/sdb
 | `mount -a` | Mount everything listed in /etc/fstab |
 | `findmnt` | Show all currently mounted filesystems |
 
----
 
 ## /etc/fstab — Persistent Mounts
 
@@ -112,7 +96,6 @@ UUID=xxxx-xxxx  /backup       ext4   defaults   0     2
 | Dump | 0 = no backup by dump |
 | Pass | Filesystem check order (0=skip, 1=root, 2=others) |
 
----
 
 ## UUID and Labels
 
@@ -132,8 +115,6 @@ xfs_admin -L "mydata" /dev/sdb1
 LABEL=mydata  /data  xfs  defaults  0  0
 ```
 
----
-
 ## Systemd Mount Units
 
 An alternative to fstab — create a `.mount` unit file:
@@ -152,8 +133,6 @@ WantedBy=multi-user.target
 ```
 
 File must be named to match the mount point: `/etc/systemd/system/data.mount`
-
----
 
 ## Swap Partition
 
@@ -178,8 +157,6 @@ Add to `/etc/fstab` for persistent swap:
 ```
 /dev/sdb2   swap   swap   defaults   0   0
 ```
-
----
 
 ## Key Takeaway
 
