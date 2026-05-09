@@ -1,7 +1,5 @@
 # Lesson 18 Lab — Solutions
 
----
-
 1. List block devices in tree view.
 ```bash
 lsblk
