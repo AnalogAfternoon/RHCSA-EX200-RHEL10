@@ -2,8 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
-
 1. View all journal logs from the current boot.
 
 2. View only error-level journal messages from the current boot.
