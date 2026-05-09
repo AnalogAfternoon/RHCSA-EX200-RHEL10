@@ -1,7 +1,5 @@
 # Lesson 17 Lab — Solutions
 
----
-
 1. View all logs from current boot.
 ```bash
 journalctl -b
