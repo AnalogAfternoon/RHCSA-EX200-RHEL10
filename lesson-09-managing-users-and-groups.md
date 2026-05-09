@@ -1,14 +1,8 @@
 # Lesson 9 — Managing Users and Groups
 
-> 📺 *Video coming soon!*
-
----
-
 ## Overview
 
 Every user on a Linux system has an account with properties that define who they are and what they can access. This lesson covers how to create and manage users and groups, set default behaviors, and control account access.
-
----
 
 ## Subtopics
 
@@ -21,7 +15,6 @@ Every user on a Linux system has an account with properties that define who they
 - 9.7 Creating and Managing Groups
 - 9.8 Managing Password Properties
 
----
 
 ## User Properties
 
@@ -58,7 +51,6 @@ jason:x:1001:1001:Jason Smith:/home/jason:/bin/bash
 | `userdel username` | Delete a user |
 | `userdel -r username` | Delete user and their home directory |
 
----
 
 ## User Default Settings
 
@@ -102,8 +94,6 @@ cat /etc/login.defs
 | `groups username` | Show all groups a user belongs to |
 | `id username` | Show UID, GID, and all group memberships |
 
----
-
 ## Key System Files
 
 | File | Description |
@@ -113,7 +103,6 @@ cat /etc/login.defs
 | `/etc/group` | Group names and members |
 | `/etc/gshadow` | Secure group account information |
 
----
 
 ## Managing Password Properties
 
@@ -126,7 +115,6 @@ cat /etc/login.defs
 | `chage -m 7 username` | Minimum 7 days between password changes |
 | `chage -W 14 username` | Warn user 14 days before expiration |
 
----
 
 ## Key Takeaway
 
