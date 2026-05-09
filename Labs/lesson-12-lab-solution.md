@@ -1,7 +1,5 @@
 # Lesson 12 Lab — Solutions
 
----
-
 1. Search for `vim`.
 ```bash
 dnf search vim
