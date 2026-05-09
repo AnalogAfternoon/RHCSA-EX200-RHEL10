@@ -1,6 +1,5 @@
 # Lesson 1 — Using the Command Line
 
-> 📺 *Video coming soon!*
 
 ---
 
