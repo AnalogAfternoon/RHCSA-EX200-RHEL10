@@ -1,7 +1,5 @@
 # Lesson 22 Lab — Solutions
 
----
-
 1. Display failed units.
 ```bash
 systemctl --failed
