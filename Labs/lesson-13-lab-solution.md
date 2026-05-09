@@ -1,7 +1,5 @@
 # Lesson 13 Lab — Solutions
 
----
-
 1. Display all running processes.
 ```bash
 ps aux
