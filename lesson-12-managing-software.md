@@ -92,7 +92,6 @@ subscription-manager register --username user --password pass
 # Registers system with Red Hat subscription
 ```
 
----
 
 ## Key Takeaway
 
