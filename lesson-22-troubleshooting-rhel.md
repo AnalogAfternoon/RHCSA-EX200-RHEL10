@@ -1,14 +1,9 @@
 # Lesson 22 — Troubleshooting RHEL
 
-> 📺 *Video coming soon!*
-
----
-
 ## Overview
 
 Troubleshooting is one of the most important skills for any system administrator. This lesson covers how to boot into recovery modes, reset a lost root password, and fix common system issues that prevent normal boot.
 
----
 
 ## Subtopics
 
@@ -22,8 +17,6 @@ Troubleshooting is one of the most important skills for any system administrator
 - 22.8 Fixing Memory Shortage
 - 22.9 Using sos report
 - 22.10 Consulting Red Hat Website for Tips
-
----
 
 ## Troubleshooting Modes
 
@@ -58,8 +51,6 @@ At GRUB menu → press e → find linux line → append:
 rd.break
 → Ctrl+X to boot
 ```
-
----
 
 ## Recovering a Lost Root Password
 
@@ -107,8 +98,6 @@ exit
 # System will reboot and SELinux relabeling will run automatically
 ```
 
----
-
 ## Other Common Troubleshooting Commands
 
 | Command | Description |
@@ -120,8 +109,6 @@ exit
 | `dmesg` | Show kernel ring buffer messages (hardware, boot) |
 | `dmesg | grep error` | Filter kernel messages for errors |
 | `fsck /dev/sdb1` | Check and repair a filesystem |
-
----
 
 ## Key Takeaway
 
