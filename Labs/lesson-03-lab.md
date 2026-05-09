@@ -2,8 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
-
 1. Run `ls /etc` and save the output to a file called `etclist.txt`.
 
 2. Run `ls /etc` again and append the output to `etclist.txt`.
