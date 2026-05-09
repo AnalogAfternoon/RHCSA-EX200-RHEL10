@@ -1,8 +1,5 @@
 # Lesson 27 — Securing RHEL with SELinux
 
-> 📺 *Video coming soon!*
-
-
 ## Overview
 
 SELinux (Security-Enhanced Linux) is a mandatory access control system built into RHEL. It provides an additional security layer beyond standard file permissions by labeling every file, process, and port with a context. Understanding SELinux is essential for the RHCSA exam.
