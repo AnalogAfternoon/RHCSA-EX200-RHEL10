@@ -1,14 +1,8 @@
 # Lesson 16 — Scheduling Tasks
 
-> 📺 *Video coming soon!*
-
----
-
 ## Overview
 
 Automating tasks on a schedule is a core sysadmin skill. RHEL offers multiple scheduling tools — systemd timers for modern service-based scheduling, cron for traditional recurring jobs, and `at` for one-time future tasks.
-
----
 
 ## Subtopics
 
@@ -17,8 +11,6 @@ Automating tasks on a schedule is a core sysadmin skill. RHEL offers multiple sc
 - 16.3 Scheduling Tasks with cron
 - 16.4 Using at
 - 16.5 Managing Temporary Files
-
----
 
 ## Systemd Timers
 
@@ -43,8 +35,6 @@ Persistent=true
 [Install]
 WantedBy=timers.target
 ```
-
----
 
 ## cron — Traditional Scheduling
 
@@ -89,7 +79,6 @@ WantedBy=timers.target
 | `/etc/cron.weekly/` | Scripts run every week |
 | `/etc/cron.monthly/` | Scripts run every month |
 
----
 
 ## at — One-Time Scheduling
 
@@ -107,8 +96,6 @@ echo "dnf update -y" | at midnight
 # Schedules a system update at midnight
 ```
 
----
-
 ## Managing Temporary Files
 
 | Command | Description |
@@ -117,8 +104,6 @@ echo "dnf update -y" | at midnight
 | `systemd-tmpfiles --clean` | Clean up old temp files |
 
 Config files are stored in `/etc/tmpfiles.d/` and `/usr/lib/tmpfiles.d/`.
-
----
 
 ## Key Takeaway
 
