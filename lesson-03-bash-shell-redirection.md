@@ -1,12 +1,8 @@
 # Lesson 3 — Bash Shell Redirection
 
----
-
 ## Overview
 
 By default, commands print their output to the screen. Redirection lets you control where that output goes — into a file, into another command, or thrown away entirely. This is one of the most powerful concepts in Linux.
-
----
 
 ## Redirection Operators
 
@@ -19,8 +15,6 @@ By default, commands print their output to the screen. Redirection lets you cont
 | `2>/dev/null` | Discard error messages entirely |
 | `2>&1` | Redirect errors to the same destination as standard output |
 
----
-
 ## Viewing Output
 
 | Command | Description |
@@ -28,8 +22,6 @@ By default, commands print their output to the screen. Redirection lets you cont
 | `head -n` | Show the first n lines of a file or output |
 | `tail -n` | Show the last n lines of a file or output |
 | `less` | Scroll through long output interactively (q to quit) |
-
----
 
 ## Examples
 
