@@ -2,8 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
-
 1. Display all units that have failed to start.
 
 2. View all error messages from the current boot using the journal.
