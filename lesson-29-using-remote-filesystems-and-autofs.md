@@ -1,14 +1,8 @@
 # Lesson 29 — Using Remote Filesystems and Autofs
 
-> 📺 *Video coming soon!*
-
----
-
 ## Overview
 
 Linux can mount filesystems from remote servers over the network using NFS. Autofs takes this further by automatically mounting remote filesystems only when they are accessed, saving resources.
-
----
 
 ## Subtopics
 
@@ -18,7 +12,6 @@ Linux can mount filesystems from remote servers over the network using NFS. Auto
 - 29.4 Setting up Autofs for Home Directories
 - 29.5 Using Systemd Automount Services
 
----
 
 ## NFS — Network File System
 
@@ -66,8 +59,6 @@ firewall-cmd --permanent --add-service=rpcbind
 firewall-cmd --reload
 ```
 
----
-
 ## Mounting NFS Shares (Client Side)
 
 ```bash
@@ -80,8 +71,6 @@ mount YOUR_SERVER_IP:/shared /mnt
 # Mount persistently via /etc/fstab
 YOUR_SERVER_IP:/shared  /mnt/shared  nfs  defaults  0  0
 ```
-
----
 
 ## Autofs — Automatic Mounting
 
@@ -124,8 +113,6 @@ ls
 # Autofs mounts it automatically on access
 ```
 
----
-
 ## Autofs for Home Directories
 
 A common use case — automatically mount user home directories from an NFS server.
@@ -141,8 +128,6 @@ A common use case — automatically mount user home directories from an NFS serv
 ```
 
 The `*` matches any username and `&` substitutes it in the path — so accessing `/home/nfs/jason` mounts `YOUR_SERVER_IP:/home/jason`.
-
----
 
 ## Systemd Automount Units
 
@@ -163,8 +148,6 @@ WantedBy=multi-user.target
 ```bash
 systemctl enable --now data.automount
 ```
-
----
 
 ## Key Takeaway
 
