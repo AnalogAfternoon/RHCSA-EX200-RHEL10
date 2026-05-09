@@ -1,7 +1,5 @@
 # Lesson 19 Lab — Solutions
 
----
-
 1. Initialize physical volume.
 ```bash
 sudo pvcreate /dev/sdb
