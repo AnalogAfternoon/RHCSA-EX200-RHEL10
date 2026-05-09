@@ -2,7 +2,7 @@
 
 ## Overview
 
-Before you can do anything meaningful in Linux, you need to know how to navigate the command line. These five commands are the foundation of everything — you will use them in every single session.
+In today's lesson, we will go over foundational concepts--concepts which will be used throughout the entirety of this course.
 
 ## Commands
 
@@ -39,4 +39,4 @@ whoami
 
 ## Key Takeaway
 
-These are the most basic navigation commands in Linux. You will use them constantly — memorize them early. Think of `pwd` as "where am I?", `ls` as "what's here?", and `cd` as "take me there."
+These are the most basic navigation commands in Linux. You will use them constantly — memorize them early.
