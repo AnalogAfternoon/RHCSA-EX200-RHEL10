@@ -2,8 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
-
 1. Display the current date, time, timezone, and NTP sync status.
 
 2. List all available timezones that contain "America".
