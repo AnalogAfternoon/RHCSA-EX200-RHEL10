@@ -2,8 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
-
 1. Generate an SSH key pair on your local machine.
 
 2. Copy your public key to a remote server (use YOUR_SERVER_IP as a placeholder).
