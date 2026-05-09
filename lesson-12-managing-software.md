@@ -1,14 +1,9 @@
 # Lesson 12 — Managing Software
 
-> 📺 *Video coming soon!*
-
----
-
 ## Overview
 
 Managing software on RHEL means working with RPM packages, DNF repositories, and modern packaging tools like Flatpak. This lesson covers everything from installing individual packages to managing repositories and updates.
 
----
 
 ## Subtopics
 
@@ -22,7 +17,6 @@ Managing software on RHEL means working with RPM packages, DNF repositories, and
 - 12.8 Installing Software with Flatpak
 - 12.9 Managing Flatpak Applications
 
----
 
 ## DNF — Package Manager
 
@@ -75,7 +69,6 @@ Managing software on RHEL means working with RPM packages, DNF repositories, and
 | `flatpak update` | Update all Flatpak applications |
 | `flatpak remove app` | Remove a Flatpak application |
 
----
 
 ## Examples
 
