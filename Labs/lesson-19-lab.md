@@ -2,8 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
-
 1. Initialize `/dev/sdb` as a physical volume.
 
 2. Create a volume group called `myvg` using `/dev/sdb`.
