@@ -1,14 +1,8 @@
 # Lesson 6 — Root Privileges and SSH
 
-> 📺 *Video coming soon!*
-
----
-
 ## Overview
 
 Most administrative tasks in Linux require elevated privileges. This lesson covers how to safely gain root access and how to connect to and transfer files between remote machines using SSH.
-
----
 
 ## Privilege Escalation
 
@@ -21,8 +15,6 @@ Most administrative tasks in Linux require elevated privileges. This lesson cove
 
 > 💡 **Tip:** Notice the shell prompt changes from `$` (regular user) to `#` (root) when you switch to root. This is a quick visual indicator of who you are.
 
----
-
 ## SSH — Secure Remote Access
 
 SSH lets you connect to and control remote Linux machines securely over a network.
@@ -32,8 +24,6 @@ SSH lets you connect to and control remote Linux machines securely over a networ
 | `ssh user@IP` | Connect to a remote machine |
 | `scp file user@IP:path` | Copy a file TO a remote machine |
 | `scp user@IP:file /local/path` | Copy a file FROM a remote machine |
-
----
 
 ## Examples
 
@@ -59,8 +49,6 @@ scp notes.txt jason@YOUR_SERVER_IP:/home/jason/
 scp jason@YOUR_SERVER_IP:/home/jason/notes.txt .
 # Copies notes.txt FROM the remote machine to your current directory
 ```
-
----
 
 ## Key Takeaway
 
