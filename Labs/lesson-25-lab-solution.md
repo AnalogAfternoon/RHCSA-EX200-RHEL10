@@ -1,7 +1,5 @@
 # Lesson 25 Lab — Solutions
 
----
-
 1. Install Apache.
 ```bash
 sudo dnf install httpd -y
