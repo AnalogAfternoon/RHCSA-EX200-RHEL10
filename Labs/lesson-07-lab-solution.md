@@ -1,7 +1,5 @@
 # Lesson 7 Lab — Solutions
 
----
-
 1. Create user `student1`.
 ```bash
 sudo useradd student1
