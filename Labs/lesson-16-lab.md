@@ -2,8 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
-
 1. Open your user's crontab for editing.
 
 2. Add a cron job that runs `/scripts/backup.sh` every day at 2:00 AM.
