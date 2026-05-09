@@ -2,8 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
-
 1. Display all running processes for all users.
 
 2. Find if the `sshd` process is running.
