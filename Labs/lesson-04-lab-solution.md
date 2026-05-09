@@ -1,7 +1,5 @@
 # Lesson 4 Lab — Solutions
 
----
-
 1. Create `rhcsa-practice` directory.
 ```bash
 mkdir ~/rhcsa-practice
