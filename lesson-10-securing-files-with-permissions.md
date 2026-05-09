@@ -71,8 +71,6 @@ chmod 700 file   # rwx------ — private
 chmod 640 file   # rw-r----- — owner read/write, group read
 ```
 
----
-
 ## Default Permissions — umask
 
 `umask` defines what permissions are **removed** from newly created files and directories.
@@ -133,8 +131,6 @@ ls -ld /tmp
 # drwxrwxrwt  (t in other execute position = sticky bit)
 ```
 
----
-
 ## Configuring Directories for Shared Group Access
 
 To set up a directory where a group can collaborate:
@@ -152,7 +148,6 @@ chmod 2770 /shared/project
 # New files will automatically belong to the developers group
 ```
 
----
 
 ## Key Takeaway
 
