@@ -1,14 +1,9 @@
 # Lesson 13 — Monitoring Activity
 
-> 📺 *Video coming soon!*
-
----
-
 ## Overview
 
 As a system administrator, knowing how to observe what is happening on your system is critical. This lesson covers how to monitor jobs, processes, memory, and CPU activity using essential Linux tools.
 
----
 
 ## Subtopics
 
@@ -19,8 +14,6 @@ As a system administrator, knowing how to observe what is happening on your syst
 - 13.5 Monitoring Memory Usage
 - 13.6 Observing CPU Load
 - 13.7 Monitoring System Activity with top
-
----
 
 ## Jobs and Processes
 
@@ -79,7 +72,6 @@ As a system administrator, knowing how to observe what is happening on your syst
 | `P` | Sort by CPU usage |
 | `1` | Show individual CPU core stats |
 
----
 
 ## Examples
 
@@ -105,8 +97,6 @@ jobs
 fg %1
 # Brings sleep back to the foreground
 ```
-
----
 
 ## Key Takeaway
 
