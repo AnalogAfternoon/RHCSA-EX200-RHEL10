@@ -1,7 +1,5 @@
 # Lesson 20 Lab — Solutions
 
----
-
 1. Display current default target.
 ```bash
 systemctl get-default
