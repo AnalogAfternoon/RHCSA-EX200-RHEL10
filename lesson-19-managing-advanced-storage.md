@@ -1,14 +1,8 @@
 # Lesson 19 — Managing Advanced Storage
 
-> 📺 *Video coming soon!*
-
----
-
 ## Overview
 
 Beyond basic partitions, RHEL supports advanced storage solutions that offer flexibility, scalability, and snapshots. This lesson covers LVM (Logical Volume Manager) and Stratis, both of which are key RHCSA topics.
-
----
 
 ## Subtopics
 
@@ -21,8 +15,6 @@ Beyond basic partitions, RHEL supports advanced storage solutions that offer fle
 - 19.7 Creating Stratis Volumes
 - 19.8 Using Stratis Snapshots
 
----
-
 ## LVM — Logical Volume Manager
 
 LVM adds a layer of abstraction between physical disks and filesystems, allowing you to resize, move, and manage storage flexibly.
@@ -33,8 +25,6 @@ LVM adds a layer of abstraction between physical disks and filesystems, allowing
 Physical Disks → Physical Volumes (PV) → Volume Groups (VG) → Logical Volumes (LV)
 ```
 
----
-
 ## Physical Volumes (PV)
 
 | Command | Description |
@@ -43,8 +33,6 @@ Physical Disks → Physical Volumes (PV) → Volume Groups (VG) → Logical Volu
 | `pvs` | List all physical volumes |
 | `pvdisplay` | Show detailed PV information |
 | `pvremove /dev/sdb` | Remove a physical volume |
-
----
 
 ## Volume Groups (VG)
 
@@ -57,7 +45,6 @@ Physical Disks → Physical Volumes (PV) → Volume Groups (VG) → Logical Volu
 | `vgdisplay` | Show detailed VG information |
 | `vgremove vgname` | Remove a volume group |
 
----
 
 ## Logical Volumes (LV)
 
@@ -69,7 +56,6 @@ Physical Disks → Physical Volumes (PV) → Volume Groups (VG) → Logical Volu
 | `lvdisplay` | Show detailed LV information |
 | `lvremove /dev/vgname/lvname` | Remove a logical volume |
 
----
 
 ## Creating a Full LVM Setup
 
@@ -91,7 +77,6 @@ mkdir /data
 mount /dev/myvg/mylv /data
 ```
 
----
 
 ## Resizing Logical Volumes
 
@@ -119,7 +104,6 @@ lvreduce -L 3G /dev/myvg/mylv
 mount /dev/myvg/mylv /data
 ```
 
----
 
 ## Device Mapper and LVM Device Names
 
@@ -130,7 +114,6 @@ LVM volumes appear in two ways — both refer to the same device:
 | `/dev/vgname/lvname` | `/dev/myvg/mylv` |
 | `/dev/mapper/vgname-lvname` | `/dev/mapper/myvg-mylv` |
 
----
 
 ## Stratis — Modern Storage Management
 
@@ -156,7 +139,6 @@ mount /stratis/poolname/fsname /mountpoint
 UUID=xxxx  /data  xfs  defaults,x-systemd.requires=stratisd.service  0  0
 ```
 
----
 
 ## Key Takeaway
 
