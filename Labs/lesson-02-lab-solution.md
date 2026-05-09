@@ -1,6 +1,5 @@
 # Lesson 2 Lab — Solutions
 
----
 
 1. Create an empty file called `testfile.txt`.
 ```bash
