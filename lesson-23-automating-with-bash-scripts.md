@@ -1,14 +1,8 @@
 # Lesson 23 — Automating with Bash Scripts
 
-> 📺 *Video coming soon!*
-
----
-
 ## Overview
 
 Bash scripting lets you automate repetitive tasks by writing sequences of commands into reusable files. This lesson covers the core building blocks of shell scripting — variables, conditionals, and loops.
-
----
 
 ## Subtopics
 
@@ -17,7 +11,6 @@ Bash scripting lets you automate repetitive tasks by writing sequences of comman
 - 23.3 Executing Conditional Code with if and test
 - 23.4 Using for and while
 
----
 
 ## Basic Script Structure
 
@@ -30,8 +23,6 @@ echo "Hello, World!"
 - The first line `#!/bin/bash` is called the **shebang** — it tells the system which interpreter to use
 - Make a script executable: `chmod +x script.sh`
 - Run a script: `./script.sh` or `bash script.sh`
-
----
 
 ## Variables and Positional Parameters
 
@@ -47,8 +38,6 @@ echo "Second argument: $2"
 echo "All arguments: $@"
 echo "Number of arguments: $#"
 ```
-
----
 
 ## Conditional Code — if and test
 
@@ -87,8 +76,6 @@ else
   echo "passwd file not found"
 fi
 ```
-
----
 
 ## Loops
 
@@ -138,8 +125,6 @@ echo "Running on: $HOSTNAME"
 exit 0   # Success
 exit 1   # Failure
 ```
-
----
 
 ## Key Takeaway
 
