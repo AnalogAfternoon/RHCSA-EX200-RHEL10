@@ -2,8 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
-
 1. Run the `dnf update` command as root without switching to the root user.
 
 2. Switch fully to the root user and verify by checking the prompt and running `whoami`. Then return to your regular user.
