@@ -4,8 +4,6 @@
 
 These are the core tools you will reach for daily — creating files, reading them, editing them, and looking up help. Getting comfortable with Vim and `man` pages early will pay off throughout the entire course.
 
----
-
 ## File Creation & Reading
 
 | Command | Description |
@@ -14,8 +12,6 @@ These are the core tools you will reach for daily — creating files, reading th
 | `echo "text" > file` | Create a file with text (overwrites existing content) |
 | `echo "text" >> file` | Append text to an existing file |
 | `cat filename` | Read and display the contents of a file |
-
----
 
 ## Vim Text Editor
 
@@ -51,8 +47,6 @@ Every command in Linux has a manual page. Learning to use `man` means you always
 | 1 | User commands |
 | 5 | Configuration files |
 | 8 | System administration commands |
-
----
 
 ## Examples
 
