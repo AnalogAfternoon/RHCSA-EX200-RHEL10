@@ -1,7 +1,5 @@
 # Lesson 11 Lab — Solutions
 
----
-
 1. Display all IP addresses.
 ```bash
 ip addr
