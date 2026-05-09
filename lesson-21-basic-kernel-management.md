@@ -1,14 +1,8 @@
 # Lesson 21 — Basic Kernel Management
 
-> 📺 *Video coming soon!*
-
----
-
 ## Overview
 
 The kernel is the core of the Linux operating system. This lesson covers how to inspect the kernel, manage kernel modules, use the /proc filesystem, and make persistent kernel parameter changes.
-
----
 
 ## Subtopics
 
@@ -18,8 +12,6 @@ The kernel is the core of the Linux operating system. This lesson covers how to 
 - 21.4 Making Persistent Changes to /proc
 - 21.5 Updating the Kernel
 
----
-
 ## Kernel Information
 
 | Command | Description |
@@ -27,8 +19,6 @@ The kernel is the core of the Linux operating system. This lesson covers how to 
 | `uname -r` | Show the current kernel version |
 | `uname -a` | Show all kernel and system info |
 | `ls /boot` | List all installed kernel files |
-
----
 
 ## Kernel Modules
 
@@ -59,8 +49,6 @@ To prevent a module from loading:
 echo "blacklist module_name" > /etc/modprobe.d/blacklist.conf
 ```
 
----
-
 ## The /proc Filesystem
 
 `/proc` is a virtual filesystem — it does not exist on disk. It exposes kernel and process information as readable files.
@@ -84,8 +72,6 @@ echo 1 > /proc/sys/net/ipv4/ip_forward
 # Enables IP forwarding immediately (not persistent)
 ```
 
----
-
 ## sysctl — Managing Kernel Parameters
 
 | Command | Description |
@@ -106,8 +92,6 @@ echo "net.ipv4.ip_forward = 1" >> /etc/sysctl.conf
 sysctl -p
 ```
 
----
-
 ## Updating the Kernel
 
 ```bash
@@ -120,8 +104,6 @@ dnf update kernel
 dnf list installed kernel
 # Shows all installed kernel versions
 ```
-
----
 
 ## Key Takeaway
 
