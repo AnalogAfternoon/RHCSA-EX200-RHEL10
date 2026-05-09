@@ -2,7 +2,7 @@
 
 ## Overview
 
-In today's lesson, we will go over foundational concepts--concepts which will be used throughout the entirety of this course.
+In today's lesson, we will go over foundational concepts which will be used throughout the course. 
 
 ## Commands
 
