@@ -2,8 +2,6 @@
 
 Complete the following tasks. Do not refer to your notes.
 
----
-
 1. Create a user called `admin1` with a home directory and bash as their shell.
 
 2. Add a comment "Admin User" to the `admin1` account.
