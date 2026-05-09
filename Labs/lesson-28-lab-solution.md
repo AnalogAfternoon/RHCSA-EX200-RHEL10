@@ -1,7 +1,5 @@
 # Lesson 28 Lab — Solutions
 
----
-
 1. Check firewalld status.
 ```bash
 systemctl status firewalld
