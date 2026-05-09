@@ -1,7 +1,5 @@
 # Lesson 24 Lab — Solutions
 
----
-
 1. Generate SSH key pair.
 ```bash
 ssh-keygen
