@@ -1,7 +1,5 @@
 # Lesson 3 — Bash Shell Redirection
 
-> 📺 *Video coming soon!*
-
 ---
 
 ## Overview
